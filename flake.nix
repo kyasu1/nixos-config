@@ -56,7 +56,7 @@
     nixosConfigurations.vm-aarch64-prl = mkVM "vm-aarch64-prl" rec {
       inherit overlays nixpkgs home-manager;
       system = "aarch64-linux";
-      user   = "mitchellh";
+      user   = "yako";
     };
 
     nixosConfigurations.vm-aarch64-utm = mkVM "vm-aarch64-utm" rec {

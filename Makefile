@@ -1,7 +1,7 @@
 # Connectivity info for Linux VM
-NIXADDR ?= unset
+NIXADDR = 10.211.55.15
 NIXPORT ?= 22
-NIXUSER ?= mitchellh
+NIXUSER ?= yako
 
 # The block device prefix to use.
 #   - sda for SATA/IDE
@@ -12,7 +12,7 @@ NIXBLOCKDEVICE ?= sda
 MAKEFILE_DIR := $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
 
 # The name of the nixosConfiguration in the flake
-NIXNAME ?= vm-intel
+NIXNAME = vm-aarch64-prl
 
 # SSH options that are used. These aren't meant to be overridden but are
 # reused a lot so we just store them up here.
